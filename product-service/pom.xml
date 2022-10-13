@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+      <!--        继承的时common-service模块里pom的依赖-->
+        <artifactId>common-service</artifactId>
+        <groupId>com.wxc</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>product-service</artifactId>
+
+     <dependencies>
+<!--         这里继承的时common和repository里面的java代码-->
+        <!-- Common Service -->
+         <dependency>
+            <groupId>com.wxc</groupId>
+            <artifactId>common-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+         <!-- Repository Service -->
+         <dependency>
+            <groupId>com.wxc</groupId>
+            <artifactId>repository-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+         <!-- EasyExcel -->
+         <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>2.2.6</version>
+        </dependency>
+    </dependencies>
+
+    
+</project>
